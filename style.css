@@ -1,0 +1,270 @@
+*{
+ padding: 0;
+ margin: 0;
+ box-sizing: border-box;
+ font-family: 'popins', sans-serif;
+ list-style: none;
+ text-decoration: none;
+ }
+ header{
+position: fixed;
+right: 0;
+top:  0;
+z-index: 1000;
+width: 100%;
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 30px 9%;
+background: transparent ;
+}
+
+.logo{
+    font-size: 40px;
+    font-weight: 750;
+    color: white;
+
+}
+.meki{
+    display: flex;
+}
+.meki a{
+
+ color: white;
+ margin-left: 60px;
+ font-size: 15px;
+font-weight: 500;
+border-bottom: 2px solid transparent;
+transition: all .55s ease;
+
+}
+.meki a:hover{
+ border-bottom: 2px solid white;
+
+}
+#menu-icon{
+ color: white;
+ font-size: 35px;
+ z-index: 10001;
+ cursor: pointer;
+ display: none;
+
+}
+.Member{
+    height: auto;
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(245.59deg, #fa4fd8 0%, #fa13bd 28.53%, #c202a2 75.52% );
+    position: ;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2rem;
+     
+}
+section{
+    padding: 0 19%;
+}
+.member-text h5{
+font-size: 15px;
+font-weight: 500;
+color: white;
+margin-bottom: 20px;
+
+}
+.member-text h1{
+font-family: 'Permanent marker', cursive;
+font-size: 80px;
+line-height: 1;
+color: white;
+margin: 0 0 20px;
+
+}
+.member-text h4{
+    font-size: 25px;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+.member-text p{
+    font-size: 15px;
+    color: white;
+    margin-bottom: 10px;
+    line-height: 1.7;
+}
+.member-img{
+   width: 325px;
+   height: auto;
+
+}
+.member-text a{
+    display: inline-block;
+    color: white;
+    background: #440245;
+    border: 1px solid transparent;
+    padding: 20px 40 px;
+    line-height: 3;
+
+    font-size: 15px;
+    font-weight: 400;
+    border-radius: 10px;
+    text-transform: uppercase;
+}
+.member-text a:hover{
+    background: transparent;
+    border: 1px solid white;
+    transform: translateX(8px);
+}
+
+.member-text a.ctaa{
+    background: transparent;
+    border: 1px solid white;
+    margin-left: 20px;
+}
+.member-text a.ctaa i{
+vertical-align: middle;
+margin-right: 5px;
+
+}
+.icons{
+    position: absolute;
+    top: 50%;
+    padding: 0 9%;
+    transform: translateY(-50%);
+}
+.icons i{
+display: block;
+margin: 26px 0;
+font-size: 24px;
+color: white;
+transition: all .100s ease;
+
+}
+.icons i:hover{
+    color: #440245;
+    transform: translateY(-5px);
+}
+.scroll-down{
+    position: 6%;
+    right: 9%;
+}
+.scroll-down i{
+    display: block;
+    padding: 12px;
+    font-size: 25px;
+    color: white;
+    background: #440245;
+    border-radius: 30px;
+    transition: all .50s ease;
+}
+@media (max-width: 1535px){
+    header{
+        padding: 15px 3%;
+        transition: .2s;
+    }
+
+.icons{
+padding: 15px 3%;
+transition: .2s;
+    }
+.scroll-down{
+    right: 3%;
+    transition: .2s;
+    }
+}
+@media (max-width: 1460px){
+    section{
+        padding: 0 12%;
+        transition: .2s;
+    }
+}
+    @media (max-width: 1340px){
+        .member-img img{
+            width: 100%;
+            height: auto;
+        } 
+    .member-text h1{
+        font-size: 75px;
+        margin: 0 0 30px;
+    }
+    .member-text h5{
+        margin-bottom: 25px;
+        }
+    }
+@media (max-width: 1195px){
+    section{
+        padding: 0 3%;
+        transition: .2s;
+    }
+    .member-text{
+        padding-top: 115px;
+    }
+    .member-img{
+text-align:center;
+    }
+    .member-img img{
+        width: 560px;
+        height: auto;
+    }
+    .Member{
+        height: 100%;
+        gap: 1rem;
+        grid-template-columns: 1fr;
+    }
+    .icons{
+        display: none;
+    }
+    .scroll-down{
+        display: none;
+    }
+}
+@media (max-width: 990px){
+    #menu-icon{
+        display: none;
+    }
+    .meki{
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        width: 300px;
+        height: 40vh;
+        background: #440245;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 50px 20 px;
+    }
+    .meki a{
+        display: block;
+        margin: 23px 0;
+        margin-left: 0;
+    }
+    .meki.open{
+        right: 0;
+    }
+}
+@media (max-width: 680px){
+    .member-img img{
+        width: 100%;
+        height: auto;
+    }
+}
+@media (max-width: 480px){
+    .member-img img{
+        width: auto;
+        height: auto;
+    }
+}
+@media (max-width: 412px){
+        .member-img img{
+            width: auto;
+            height: auto;
+        }
+}
+@media (max-width: 360px){
+    .member-img img{
+        width: 100%;
+        height: auto;
+    }
+}
